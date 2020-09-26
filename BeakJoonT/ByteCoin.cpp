@@ -8,7 +8,7 @@ int main()
 	long w = 0;
 	long coin = 0;
 	vector<int> day;
-	
+
 	cin >> n;
 	cin >> w;
 
@@ -25,12 +25,12 @@ int main()
 				w %= day[i];
 			}
 		}
-		else if (coin > 0) {
-			if (i < n - 1 && day[i] > day[i + 1]) {
+		else if (i < n - 1 && coin > 0) {
+			if (day[i] > day[i + 1]) {
 				w += day[i] * coin;
 				coin = 0;
 			}
-		}	
+		}
 	}
 
 	if (coin > 0) {
