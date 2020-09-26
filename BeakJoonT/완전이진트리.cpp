@@ -18,7 +18,7 @@ int main()
 		v.push_back(a);
 	}
 
-	int i = i = size / 2;
+	int i = size / 2;
 	answer.push_back(v[i]);
 	i /= 2;
 	int old_i = i;
