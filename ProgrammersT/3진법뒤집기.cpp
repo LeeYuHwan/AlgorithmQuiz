@@ -1,7 +1,5 @@
 #include <string>
 #include <cmath>
-#include <string>
-
 using namespace std;
 
 int solution(int n) {
