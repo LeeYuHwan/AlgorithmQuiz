@@ -54,6 +54,5 @@ public class Q15270 {
         if(answer < N) answer++;
 
         System.out.println(answer);
-
     }
 }
