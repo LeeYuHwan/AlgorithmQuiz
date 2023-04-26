@@ -38,3 +38,45 @@ public class Q25381 {
     }
 }
 
+/* import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Q25381 {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String S = br.readLine();
+
+        Queue<Integer> q = new LinkedList<>();
+
+        int answer = 0;
+        boolean[] visit = new boolean[S.length() + 1];
+
+        for(int i = 0; i < S.length(); i++){
+
+            if(S.charAt(i) == 'B') q.add(i);
+            else if (S.charAt(i) == 'C' && !q.isEmpty()){
+                visit[q.poll()] = true;
+                answer++;
+            }
+        }
+        
+        q = new LinkedList<>();
+        for(int i = 0; i < S.length(); i++){
+            if(S.charAt(i) == 'A') q.add(i);
+            else if (S.charAt(i) == 'B' && !q.isEmpty() && !visit[i]){
+                visit[q.poll()] = true;
+                answer++;
+            }
+        }
+
+        System.out.println(answer);
+
+    }
+}
+*/
+
+
+
